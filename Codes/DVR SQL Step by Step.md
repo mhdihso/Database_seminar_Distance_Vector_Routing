@@ -77,33 +77,7 @@ Output:
 This is the core SQL. It keeps finding cheaper paths until nothing improves.
 
 ```sql
-WITH RECURSIVE routing AS (
-
-    -- Base case: what each router knows directly (T=0)
-    SELECT from_node,
-           to_node,
-           cost,
-           to_node AS next_hop
-    FROM edges
-
-    UNION ALL
-
-    -- Recursive step: can we reach further via a neighbor?
-    SELECT r.from_node,
-           e.to_node,
-           r.cost + e.cost,
-           r.next_hop
-    FROM routing r
-    JOIN edges e ON r.to_node = e.from_node
-    WHERE r.from_node <> e.to_node  -- do not go back to yourself
-
-)
-SELECT from_node,
-       to_node,
-       MIN(cost) AS best_cost
-FROM routing
-GROUP BY from_node, to_node
-ORDER BY from_node, best_cost;
+SOME COOL SQL CODE
 ```
 
 Output — the final routing table for every router:
@@ -132,32 +106,7 @@ Notice: A to C is now 5 (via B), not 23 (direct). The algorithm found the cheape
 Not just the cost — also show which neighbor to use.
 
 ```sql
-WITH RECURSIVE routing AS (
-
-    SELECT from_node,
-           to_node,
-           cost,
-           to_node AS next_hop
-    FROM edges
-
-    UNION ALL
-
-    SELECT r.from_node,
-           e.to_node,
-           r.cost + e.cost,
-           r.next_hop        -- keep the FIRST hop, not the last
-    FROM routing r
-    JOIN edges e ON r.to_node = e.from_node
-    WHERE r.from_node <> e.to_node
-
-)
-SELECT DISTINCT ON (from_node, to_node)
-       from_node,
-       to_node,
-       cost AS best_cost,
-       next_hop
-FROM routing
-ORDER BY from_node, to_node, cost ASC;
+EVEN MORE COOL SQL CODE HERE
 ```
 
 Output:
@@ -186,7 +135,7 @@ Reading example: A wants to reach D — best cost is 10, and it should send the 
 The link between B and C goes down. What happens to the routing tables?
 
 ```sql
--- Remove the broken link
+
 DELETE FROM edges
 WHERE (from_node = 'B' AND to_node = 'C')
    OR (from_node = 'C' AND to_node = 'B');
@@ -218,12 +167,12 @@ Notice what changed:
 
 ## Summary — What Each SQL Block Does
 
-| Step | What it does |
-|------|-------------|
-| Step 1 | Creates the network as a table |
-| Step 2 | Shows T=0 — only direct neighbors known |
-| Step 3 | Runs the full algorithm, finds best costs |
-| Step 4 | Same as Step 3, but also shows next hop |
+| Step   | What it does                                   |
+| ------ | ---------------------------------------------- |
+| Step 1 | Creates the network as a table                 |
+| Step 2 | Shows T=0 — only direct neighbors known        |
+| Step 3 | Runs the full algorithm, finds best costs      |
+| Step 4 | Same as Step 3, but also shows next hop        |
 | Step 5 | Deletes a link and re-runs to simulate failure |
 
 ---
