@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overview.md",
+                "file": "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Overview"
+              "title": "02 Distance-Vector Routing in DuckDB"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview.md",
+                "file": "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Overview"
+              "title": "Backlinks for 02 Distance-Vector Routing in DuckDB"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview.md",
+                "file": "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Overview"
+              "title": "Outgoing links from 02 Distance-Vector Routing in DuckDB"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview.md",
+                "file": "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Overview"
+              "title": "Outline of 02 Distance-Vector Routing in DuckDB"
             }
           }
         ]
@@ -185,15 +185,20 @@
   },
   "active": "817892db108b4f26",
   "lastOpenFiles": [
+    "duckdb_implementation/01 DuckDB and Recursive CTEs.md",
+    "ideas/we should use Duckdb.md",
+    "duckdb_implementation/03 Full SQL Script.sql",
+    "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
+    "duckdb_implementation",
     "Codes/DVR SQL Step by Step.md",
+    "SQL Recursive CTEs.md",
     "Overview.md",
     "Link-State Routing.md",
-    "Untitled.base",
-    "Routing Information Protocol (RIP).md",
-    "Seminar Weekly Plan.md",
-    "SQL Recursive CTEs.md",
-    "Bellman-Ford Algorithm.md",
     "Distance-Vector Routing.md",
+    "Seminar Weekly Plan.md",
+    "Routing Information Protocol (RIP).md",
+    "Bellman-Ford Algorithm.md",
+    "Untitled.base",
     "Untitled.canvas",
     "example 1.md",
     "Time Plan.md",
