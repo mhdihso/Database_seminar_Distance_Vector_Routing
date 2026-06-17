@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
+                "file": "duckdb_implementation/01 DuckDB and Recursive CTEs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 Distance-Vector Routing in DuckDB"
+              "title": "01 DuckDB and Recursive CTEs"
             }
           }
         ]
@@ -186,11 +186,11 @@
   "active": "817892db108b4f26",
   "lastOpenFiles": [
     "duckdb_implementation/01 DuckDB and Recursive CTEs.md",
+    "Codes/DVR SQL Step by Step.md",
+    "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
     "ideas/we should use Duckdb.md",
     "duckdb_implementation/03 Full SQL Script.sql",
-    "duckdb_implementation/02 Distance-Vector Routing in DuckDB.md",
     "duckdb_implementation",
-    "Codes/DVR SQL Step by Step.md",
     "SQL Recursive CTEs.md",
     "Overview.md",
     "Link-State Routing.md",
