@@ -696,7 +696,7 @@
 
   [A → C], [5], [*6*], [#text(fill: uni-red)[+1]],
   [B → C], [2], [*9*], [#text(fill: uni-red)[+7]],
-  [C → B], [2], [*9*], [#text(fill: uni-red)[+6]],
+  [C → B], [2], [*9*], [#text(fill: uni-red)[+7]],
 )
   ],
   [
