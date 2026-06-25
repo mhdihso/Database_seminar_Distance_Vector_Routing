@@ -2,7 +2,7 @@
 // SQL as a Programming Language:
 // Distance-Vector Routing with Recursive CTEs in DuckDB
 //
-// Mehdi Hoseyni - Database Systems Seminar - University of Tübingen
+// Mehdi Hosseini - Database Systems Seminar - University of Tübingen
 // Summer Semester 2026
 // ═══════════════════════════════════════════════════════════════════════
 
@@ -51,7 +51,7 @@
       #v(2pt)
       #set text(size: 8pt, fill: text-muted)
       #grid(columns: (1fr, 1fr, 1fr),
-        [Mehdi Hoseyni | University of Tübingen],
+        [Mehdi Hosseini | University of Tübingen],
         align(center)[Master Seminar: Database Systems],
         align(right)[#context counter(page).display("1 / 1", both: true)],
       )
@@ -248,7 +248,7 @@
     #line(length: 80pt, stroke: 2pt + uni-red)
     #v(10pt)
 
-    #text(size: 13pt, fill: rgb("#ccc"))[Mehdi Hoseyni]
+    #text(size: 13pt, fill: rgb("#ccc"))[Mehdi Hosseini]
     #v(4pt)
     #text(size: 10pt, fill: rgb("#888"))[
       Master Seminar: Database Systems - Summer Semester 2026
@@ -910,7 +910,7 @@
 
       #v(12pt)
 
-      #text(size: 12pt, fill: white)[Mehdi Hoseyni]
+      #text(size: 12pt, fill: white)[Mehdi Hosseini]
       #v(3pt)
       #text(size: 10pt, fill: rgb("#888"))[
         Database Systems Seminar - University of Tübingen - Summer 2026
